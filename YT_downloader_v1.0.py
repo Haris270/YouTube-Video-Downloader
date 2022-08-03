@@ -74,10 +74,10 @@ class MainPage(tk.Tk):
         vid_title_lbl.grid(column=0, row=1, sticky='w')
 
         videoTitle = tk.Label(new_window, text=str(yt.title))
-        videoTitle.grid(column=0,row=2)
+        videoTitle.grid(column=0,row=2, sticky='w')
         
 
-        select_res_prompt = tk.Label(new_window, text= "Available Video Resolutions: ", font=('Arabic Typesetting', 16))
+        select_res_prompt = tk.Label(new_window, text= "Video Resolution: ", font=('Arabic Typesetting', 16))
         select_res_prompt.grid(column=0, row=3, sticky='w', ipady=10)
 
 
@@ -97,7 +97,7 @@ class MainPage(tk.Tk):
         
         res_menu = tk.StringVar()
 
-        res_menu_drop = ttk.Combobox(new_window, width=16, values= filtered_resolutions, textvariable= res_menu)
+        res_menu_drop = ttk.Combobox(new_window, width=12, values= filtered_resolutions, textvariable= res_menu)
         res_menu_drop.grid(column=0, row=3)
 
 
