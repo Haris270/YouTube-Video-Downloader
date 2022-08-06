@@ -149,6 +149,4 @@ window = tk.Tk()
 mm = MainPage(window)
 window.mainloop()
 
-#https://www.youtube.com/watch?v=5DkkCDk1lpU
-#https://www.youtube.com/watch?v=8pm_Koguqpm
-#https://www.youtube.com/watch?v=TgHcTailbao
+
