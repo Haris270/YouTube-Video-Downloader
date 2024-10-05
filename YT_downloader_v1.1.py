@@ -21,7 +21,7 @@ class MainPage(tk.Tk):
         title = tk.Label(self.root, text="YT VIDEO DOWNLOADER", font=('Georgia',12))
         title.grid(column=0,row=0, columnspan=2, ipadx=110)
         
-        prologue = tk.Label(self.root, text= 'Welcome! Enter the video URL:', font=('Arabic Typesetting',16))
+        prologue = tk.Label(self.root, text= 'Welcome! Enter the video URL:', font=('Perpetua',16))
         prologue.grid(column= 0, row= 1, sticky='w', ipady=20)
         self.obtainVideoLink()
 
@@ -101,7 +101,7 @@ class MainPage(tk.Tk):
 
     def showTitle(self):
                
-        vid_title_lbl = tk.Label(self.new_window, text= "Video Title: ", font=('Arabic Typesetting',16))
+        vid_title_lbl = tk.Label(self.new_window, text= "Video Title: ", font=('Perpetua',16))
         vid_title_lbl.grid(column=0, row=1, sticky='w')
 
         videoTitle = tk.Label(self.new_window, text=str(self.yt.title))
@@ -110,7 +110,7 @@ class MainPage(tk.Tk):
 
     def showResolutions(self, final_resolutions):
                
-        select_res_prompt = tk.Label(self.new_window, text= "Video Resolution: ", font=('Arabic Typesetting', 16))
+        select_res_prompt = tk.Label(self.new_window, text= "Video Resolution: ", font=('Perpetua', 16))
         select_res_prompt.grid(column=0, row=3, sticky='w', ipady=10)
       
         res_menu = tk.StringVar()
