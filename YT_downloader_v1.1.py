@@ -1,7 +1,10 @@
 
 import tkinter as tk
 from tkinter import ttk
-from pytube import YouTube
+#from pytube import YouTube
+
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 
 
 class MainPage(tk.Tk):
@@ -39,7 +42,7 @@ class MainPage(tk.Tk):
             
             try:
                 
-                self.yt = YouTube(videoLink)
+                self.yt = YouTube(videoLink, on_progress_callback = on_progress)
                 
             except:
                 error_lbl = tk.Label(self.root, text= "~ Error - Video Not Found ~      ", fg='white')
